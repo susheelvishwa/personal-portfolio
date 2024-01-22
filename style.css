@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-size: xx-large;
+    /* color: white; */
+}
+
+/*------------------------Home----------------------------- */
+
+
+#home{
+    height: 100vh;
+    background-image:url(./image/backimg.avif) ;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name{
+    font-size: 35px;
+    margin-top: 5px;
+    padding-left: 20px;
+    /* color: rgb(255, 187, 149);
+     */
+    color: white;
+}
+
+.main{
+    padding-left: 100px;
+    font-size: 33px;
+    color: black;
+    padding-top: 150px;
+    font-weight: 1000;
+}
+.navbar1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    /* background-color: rgb(71, 1, 162); */
+    /* opacity: 0.2; */
+    position: sticky;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    /* background:purple; */
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover::after{
+    width: 85%;
+}
+
+#element{
+    color:rgb(255, 187, 149);
+}
+
+
+/* <-----------------------about section---------> */
+
+#about{
+    height: 100vh;
+    background-image: url(./image/pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutt{
+    padding:80px;
+}
+
+.aboutme{
+    font-size: 20px;
+    padding: 10px 20px 0 ;
+    color: black;
+}
+
+.photo1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.photo{
+    height: 340px;
+    margin: 20px;
+    background-color: rgb(178, 216, 255);
+    border-radius: 20px;
+}
+
+.info{
+    height: 340px;
+    width: 800px;
+    background-color:transparent;
+    border-radius: 20px;
+    margin:20px 40px;
+    background-color: rgb(251, 207, 240);
+}
+
+.student{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+}
+
+.massage{
+    color:black;
+    font-size: 19px;
+    margin: 13px 25px;
+}
+
+.form{
+    margin: 0px 20px 0;
+    background-color: rgb(218, 188, 252);
+    border-radius: 20px;
+    padding: 15px;;
+    display: flex;
+}
+
+.form1{
+    color: black;
+    font-size: 17px;
+    font-style: none;
+    display: flex;
+}
+
+
+.link{
+    display: flex;
+}
+
+.tab-titles {
+    margin-left:25px;
+    display: flex;
+    color: blue;
+    font-size: 19px;
+    justify-content:space-around;
+}
+
+.tab-links {
+    cursor: pointer;
+    position: relative;
+    margin: 0 10px;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background:black;
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    transition: 0.4s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+
+.tab-contents ul li {
+    list-style: none;
+    font-size: 15px;
+    margin: 0 90px;
+    color: black;
+}
+
+.tab-contents ul li span {
+    color:rgb(132, 0, 255);
+    
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* --------------portfolio-------------- */
+
+
+
+/* ----------------contact-------------- */
+
+#contact{
+    height: 100vh;
+    background-image: url(./image/pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:95px 80px;
+}
+
+.contact1{
+    color: black;
+    font-size: 20px;
+}
+
+.left{
+    font-size: 17px;
+    color: black;
+    padding:30px 30px;
+}
+
+.logo{
+    height:40px;
+}
+
+.row{
+    display: flex;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 5px;
+    margin-bottom:30px;
+    display: inline-block;
+    transition:transform 0.3s;
+}
+
+.social a:hover{
+    color: rgb(133, 21, 21);
+    transform: translateY(-5px);
+}
+
+form input, form textarea{
+    width: 65%;
+    outline: none;
+    background: #262626;
+    padding:7px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px; 
+    margin-left:300px;
+} 
+
+form .btn2{
+    font-size: 20px; 
+    cursor: pointer;
+    margin:20px;
+    padding: 5px  20px;
+    border-radius: 10px;
+    background-color:rgb(250, 202, 240);
+    margin-left: 300px;
+    display: flex;
+    padding-bottom: none;
+}
+
+.resume{
+    padding-left: 1200px;
+    padding-top: 250px;
+
+}
+
+.re{
+    border-radius: 5px;
+    height:40px;
+    width: 80px;
+}
+
+.re:hover{
+    background:black;
+    color: white;
+}
+
+form .btn2:hover {
+    padding: 5px 23px;
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color:rgb(195, 222, 252);
+
+}
+form.btn2:hover{
+    color:black;
+    
+} 
+
+.right form button{
+    display: flex;
+}
+
+.btn2{
+    background-color: rgb(250, 202, 240);
+    
+}
+
+#msg{
+    margin-top: none;
+    padding-top: none;
+    margin-left:300px;
+    color: rgb(0, 254, 0);
+}
+
+/* ------------------portfolio----------- */
+
+#portfolio{
+    height: 100vh;
+    background-image: url(./image/pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: 2px solid black; */
+    padding:87px 15px 15px 15px;
+}
+
+.title{
+    font-size: 50px;
+}
+.pro{
+    height:250px;
+    border-radius:5px;
+}
+
+.work-list{
+    display:flex;
+    grid-template-columns: repeat(auto-fit,minmax(250pxm, 1fr));
+    justify-content: space-around;
+
+}
+
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+    margin-left: 100PX;
+}
+
+.layerr{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(215, 210, 240, 0.6),rgb(5, 5, 63));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    color: white;
+}
+
+.layerr h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layerr a{
+    margin-top:20px;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10%;
+    display: block;
+    transition:transform 0.5;
+}
+.work-list{
+    padding-top: 80px;
+}
+
+.title{
+    margin-left: 80px;
+}

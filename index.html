@@ -5,8 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Quicksand:wght@600&display=swap');
+    </style>
+
 </head>
+
 <body>
+    <div id="home">
+            <nav class="navbar1">
+                <h1 class="name">Susheel Vishwakarma</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="main">
+                        <div>Hi 👋 I'am</div>
+                        <div>Susheel Vishwakarma</div>
+                        <span id="element"></span>
+                        <div>From India</div>
+            </div>
+
+            <div class="resume">
+                <a href="./image/Resume.pdf" download><button class="re">Resume</button>
+                </div></a>
+            <!-- <dir><a href="">Download Resume</a></dir> -->
+    </div>
+
+    <!-- ---------------------------------------About Section--------------------------------------- -->
+
+    <div id="about">
+        <div class="aboutt">
+            <div class="pho">
+                
+                <div class="aboutme"><h2>Learn more about me </h2></div>
+                <div class="photo1">
+                    <div >
+                        <img class="photo" src="./image/Remove background project (1).png" alt="">
+                    </div>
+                    <div class="info">
+                        <h1 class="student">Student & Aspiring Full Stack Developer</h1>
+                        <p class="massage"><span>Student at masai</span> & <span>Aspiring Full Stack Developer.</span> I am pursuing my <span>B.Tech</span> in Electronics and Communication at the Sagar Institute
+                        of Research and Technology, Bhopal. As a passionate full-stack web developer, I regularly work in that capacity.
+                        Currently, <span>my expertise has given me a good understanding of both front-end and back-end technologies,</span> allowing me to
+                        design unique, user-friendly software solutions. I am diligent and strive for perfection in whatever I do. As I continue
+                        to progress, I am excited to professionally apply my abilities and expertise as a Full Stack Developer. <span>I will complete
+                        my graduation in June 2024.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <div class="left1">
+                <div class="link">
+                    <h3 class="form1">
+                        <ul>Birthday : 12 July 2002</ul>
+                    </h3>
+                </div>
+                
+                <h3 class="form1"><ul>Degree   : Electronics and Communication
+                </ul></h3>
+                <h3 class="form1">Email : <a href="susheelvishwakarma.india@gmail.com">susheelvishwakarma.india@gmail.com</a></h3>
+                <h3 class="form1">Collage : <a href="https://www.sirtbhopal.ac.in/">Sagar Institute of Research and Technology, Bhopal</a>
+                </h3>
+                </div>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">skills</p>
+                    <p class="tab-links" onclick="opentab(event,'education')">Interests</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>language</span><br>Python <br>Javascript <br>HTML <br>CSS </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents " id="education">
+                    <ul>
+                        <li><span>User-friendly software solutions</span><br>Open Source <br>full-stack <br> Matchine larning <br> Artifitial Intelegence</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ------------------------Portfolio------------------------------------- -->
+
+    <div id="portfolio">
+        <div class="mainj">
+            <h1 class="title">Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="pro PRO11" src="./image/pro1.jpg" alt="">
+                    <div class="layerr">
+                        <h3>Boatlifestyle Clone</h3>
+                        <p>E comearce web</p>
+                        <a href="https://susheelvishwakarma.netlify.app"><img class="logo" src="./image/link-solid.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img class="pro" src="./image/pro2.jpg" alt="">
+                    <div class="layerr">
+                        <h3>Portfolio</h3>
+                        <p>All about me</p>
+                        <a href=""><img class="logo" src="./image/link-solid.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ------------------------Contact------------------------------------- -->
     
+    <div id="contact">
+        <div class="contact1">
+            <h1>Contact me</h1>
+        </div>
+            <div class="row">
+                <div class="left">
+                    <img class="gap" src="./image/envelope-solid.svg"<p>susheelvishwakarma.india@gmail.com</p>
+                    <br>
+                    <img class="gap" src="./image/mobile-solid.svg"
+                    <br>
+
+                    <p>9630791492</p><br>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/susheelvishwakarma65/"><img class="logo" src="./image/linkedin.svg" alt=""></a><br>
+                        <a href="https://github.com/susheelvishwa"><img class="logo" src="./image/square-github.svg" alt=""></a><br>
+                        <a href="https://auth.geeksforgeeks.org/user/susheelvishwakarma65"><img class="logo" src="./image/g4g.jpg" alt=""></a><br>
+                        <a href="insta"><img class="logo" src="./image/square-instagram.svg" alt=""></a><br>
+                        <a href="https://www.linkedin.com/in/susheelvishwakarma65/"><img class="logo" src="./image/" alt=""></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <form name="submit-to-google-sheet" action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Mail" required>
+                        <input type="text" name="Subject" placeholder="Your Subject" required>
+                        <textarea name="Message" id="" cols="" rows="5" placeholder="Your Message"></textarea>
+                        <button class="btn2" type="submit">submit</button>
+                        <span id="msg"></span> 
+                    </form>
+                </div>     
+            </div>
+    </div>
+</div>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
