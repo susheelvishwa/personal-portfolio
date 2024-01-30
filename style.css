@@ -33,13 +33,13 @@ body {
     padding-left: 20px;
     /* color: rgb(255, 187, 149);
      */
-    color: white;
+    color:white;
 }
 
 .main{
     padding-left: 100px;
     font-size: 33px;
-    color: black;
+    color:whitesmoke;
     padding-top: 150px;
     font-weight: 1000;
 }
@@ -54,6 +54,8 @@ body {
     top: 0;
     position: fixed;
     width: 100%;
+    /* background-color:#9370DB; */
+    background-color:rgb(50, 0, 126);
 }
 
 nav ul li{
@@ -61,6 +63,11 @@ nav ul li{
     list-style: none;
     margin: 15px 25px;
 }
+
+.main>span{
+    color: #C71585;
+}
+
 
 nav ul li a{
     color:white;
@@ -86,7 +93,8 @@ nav ul li a:hover::after{
 }
 
 #element{
-    color:rgb(255, 187, 149);
+    /* color:#FA8072; */
+    color: #FFA07A;
 }
 
 
@@ -286,18 +294,18 @@ form .btn2{
     display: flex;
     padding-bottom: none;
 }
-
+/* 
 .resume{
     padding-left: 1200px;
     padding-top: 250px;
 
-}
+} */
 
 .re{
     border-radius: 5px;
     height:40px;
     width: 80px;
-}
+} 
 
 .re:hover{
     background:black;
